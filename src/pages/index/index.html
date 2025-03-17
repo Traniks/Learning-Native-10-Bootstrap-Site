@@ -1,80 +1,765 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			type="image/x-icon"
+			rel="shortcut icon"
+			href="../../assets/icons/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Описание сайта" />
+		<link rel="stylesheet" href="../../assets/scss/main.scss" />
+		<link rel="stylesheet" href="scss/index.scss" />
+		<title>Bootstrap</title>
+	</head>
+	<body class="bg-light text-dark">
+		<!-- Header -->
+		<header>
+			<div class="px-3 py-2 text-bg-dark border-bottom">
+				<div class="container">
+					<div
+						class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+						<a
+							href="/"
+							class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+							<i class="bi bi-bootstrap-fill"></i>
+						</a>
 
-    <link type="image/x-icon" rel="shortcut icon" href="../../assets/icons/favicon.ico">
+						<ul
+							class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+							<li>
+								<a href="#" class="nav-link text-secondary">
+									<i class="bi bi-house"></i>
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white">
+									<i class="bi bi-speedometer2"></i>
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white">
+									<i class="bi bi-table"></i>
+									Orders
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white">
+									<i class="bi bi-shop"></i>
+									Products
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white">
+									<i class="bi bi-person-circle"></i>
+									Customers
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Описание сайта">
+			<div class="px-3 py-2 border-bottom">
+				<div class="container d-flex flex-wrap justify-content-center">
+					<form
+						class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto"
+						role="search">
+						<input
+							type="search"
+							class="form-control"
+							placeholder="Search..."
+							aria-label="Search" />
+					</form>
 
-    <link rel="stylesheet" href="../../assets/scss/main.scss">
-    <link rel="stylesheet" href="scss/index.scss">
-    <title>Название сайта</title>
-</head>
-<body>
+					<div class="text-end">
+						<button
+							type="button"
+							class="btn btn-light text-dark me-2">
+							Login
+						</button>
+						<button type="button" class="btn btn-primary">
+							Sign-up
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
+		<main>
+			<section id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="0"
+						class=""
+						aria-label="Slide 1"></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+						class=""></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+						class="active"
+						aria-current="true"></button>
+				</div>
 
-                <a href="#" class="header__logo">Logo</a>
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false">
+							<rect
+								width="100%"
+								height="100%"
+								fill="var(--bs-secondary-color)"></rect>
+						</svg>
+						<div class="container">
+							<div class="carousel-caption text-start">
+								<h1>Example headline.</h1>
+								<p class="opacity-75">
+									Some representative placeholder content for
+									the first slide of the carousel.
+								</p>
+								<p>
+									<a class="btn btn-lg btn-primary" href="#">
+										Sign up today
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false">
+							<rect
+								width="100%"
+								height="100%"
+								fill="var(--bs-secondary-color)"></rect>
+						</svg>
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Another example headline.</h1>
+								<p>
+									Some representative placeholder content for
+									the second slide of the carousel.
+								</p>
+								<p>
+									<a class="btn btn-lg btn-primary" href="#">
+										Learn more
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item active">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false">
+							<rect
+								width="100%"
+								height="100%"
+								fill="var(--bs-secondary-color)"></rect>
+						</svg>
+						<div class="container">
+							<div class="carousel-caption text-end">
+								<h1>One more for good measure.</h1>
+								<p>
+									Some representative placeholder content for
+									the third slide of this carousel.
+								</p>
+								<p>
+									<a class="btn btn-lg btn-primary" href="#">
+										Browse gallery
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                <div class="header__menu" data-burger="menu">
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="prev">
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
 
-                    <nav class="header__nav">
-                        <lu class="header__list">
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="next">
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 
-                            <!-- item-1 -->
-                            <li class="header__list-item header__list-item_active">
-                                <a href="index.html">Главная</a>
-                            </li>
+			</section>
 
-                            <!-- item-2 -->
-                            <li class="header__list-item">
-                                <a href="about.html">О нас</a>
-                            </li>
+			<section class="marketing pt-5 pb-5">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center">
+							<svg
+								class="bd-placeholder-img rounded-circle"
+								width="140"
+								height="140"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-color)"></rect>
+							</svg>
+							<h2 class="fw-normal">Heading</h2>
+							<p>
+								Some representative placeholder content for the
+								three columns of text below the carousel. This is
+								the first column.
+							</p>
+							<p>
+								<a class="btn btn-secondary" href="#">
+									View details »
+								</a>
+							</p>
+						</div>
+	
+						<div
+							class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center">
+							<svg
+								class="bd-placeholder-img rounded-circle"
+								width="140"
+								height="140"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-color)"></rect>
+							</svg>
+							<h2 class="fw-normal">Heading</h2>
+							<p>
+								Another exciting bit of representative placeholder
+								content. This time, we've moved on to the second
+								column.
+							</p>
+							<p>
+								<a class="btn btn-secondary" href="#">
+									View details »
+								</a>
+							</p>
+						</div>
+	
+						<div
+							class="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center">
+							<svg
+								class="bd-placeholder-img rounded-circle"
+								width="140"
+								height="140"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-color)"></rect>
+							</svg>
+							<h2 class="fw-normal">Heading</h2>
+							<p>
+								And lastly this, the third column of representative
+								placeholder content.
+							</p>
+							<p>
+								<a class="btn btn-secondary" href="#">
+									View details »
+								</a>
+							</p>
+						</div>
+					</div>
+	
+					<hr class="featurette-divider mt-5 mb-5" />
+	
+					<div
+						class="row featurette align-items-center justify-content-center">
+						<div class="col-md-7">
+							<h2 class="featurette-heading fw-normal lh-1">
+								First featurette heading.
+								<span class="text-body-secondary">
+									It’ll blow your mind.
+								</span>
+							</h2>
+							<p class="lead">
+								Some great placeholder content for the first
+								featurette here. Imagine some exciting prose here.
+							</p>
+						</div>
+	
+						<div class="col-md-5">
+							<svg
+								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+								width="500"
+								height="500"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder: 500x500"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-bg)"></rect>
+								<text
+									x="50%"
+									y="50%"
+									fill="var(--bs-secondary-color)"
+									dy=".3em">
+									500x500
+								</text>
+							</svg>
+						</div>
+					</div>
+	
+					<hr class="featurette-divider mt-5 mb-5" />
+	
+					<div
+						class="row featurette align-items-center justify-content-center">
+						<div class="col-md-7 order-md-2">
+							<h2 class="featurette-heading fw-normal lh-1">
+								Oh yeah, it’s that good.
+								<span class="text-body-secondary">
+									See for yourself.
+								</span>
+							</h2>
+							<p class="lead">
+								Another featurette? Of course. More placeholder
+								content here to give you an idea of how this layout
+								would work with some actual real-world content in
+								place.
+							</p>
+						</div>
+	
+						<div class="col-md-5 order-md-1">
+							<svg
+								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+								width="500"
+								height="500"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder: 500x500"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-bg)"></rect>
+								<text
+									x="50%"
+									y="50%"
+									fill="var(--bs-secondary-color)"
+									dy=".3em">
+									500x500
+								</text>
+							</svg>
+						</div>
+					</div>
+	
+					<hr class="featurette-divider mt-5 mb-5" />
+	
+					<div
+						class="row featurette align-items-center justify-content-center">
+						<div class="col-md-7">
+							<h2 class="featurette-heading fw-normal lh-1">
+								And lastly, this one.
+								<span class="text-body-secondary">Checkmate.</span>
+							</h2>
+							<p class="lead">
+								And yes, this is the last block of representative
+								placeholder content. Again, not really intended to
+								be actually read, simply here to give you a better
+								view of what this would look like with some actual
+								content. Your content.
+							</p>
+						</div>
+	
+						<div class="col-md-5">
+							<svg
+								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+								width="500"
+								height="500"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder: 500x500"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false">
+								<title>Placeholder</title>
+								<rect
+									width="100%"
+									height="100%"
+									fill="var(--bs-secondary-bg)"></rect>
+								<text
+									x="50%"
+									y="50%"
+									fill="var(--bs-secondary-color)"
+									dy=".3em">
+									500x500
+								</text>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                            <!-- item-3 -->
-                            <li class="header__list-item">
-                                <a href="contact.html">Контакты</a>
-                            </li>
+			<section class="price pt-5 pb-5">
+				<div class="container">
+					<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+						<h1 class="display-4 fw-normal text-body-emphasis">
+							Pricing
+						</h1>
+						<p class="fs-5 text-body-secondary">
+							Quickly build an effective pricing table for your
+							potential customers with this Bootstrap example. It’s
+							built with default Bootstrap components and utilities
+							with little customization.
+						</p>
+					</div>
+	
+					<div class="row row-cols-1 row-cols-md-4 mb-3 text-center justify-content-center">
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Free</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$0
+										<small class="text-body-secondary fw-light">
+											/mo
+										</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>10 users included</li>
+										<li>2 GB of storage</li>
+										<li>Email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button
+										type="button"
+										class="w-100 btn btn-lg btn-outline-primary">
+										Sign up for free
+									</button>
+								</div>
+							</div>
+						</div>
 
-                        </lu>
-                    </nav>
-                    
-                </div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Pro</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$15
+										<small class="text-body-secondary fw-light">
+											/mo
+										</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>20 users included</li>
+										<li>10 GB of storage</li>
+										<li>Priority email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button
+										type="button"
+										class="w-100 btn btn-lg btn-primary">
+										Get started
+									</button>
+								</div>
+							</div>
+						</div>
 
-                <button class="header__burger" data-burger="btn" aria-label="Открыть меню">
-                    <span></span>
-                </button>
+						<div class="col">
+							<div
+								class="card mb-4 rounded-3 shadow-sm border-primary">
+								<div
+									class="card-header py-3 text-bg-primary border-primary">
+									<h4 class="my-0 fw-normal">Enterprise</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$29
+										<small class="text-body-secondary fw-light">
+											/mo
+										</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>30 users included</li>
+										<li>15 GB of storage</li>
+										<li>Phone and email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button
+										type="button"
+										class="w-100 btn btn-lg btn-primary">
+										Contact us
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<h2 class="display-6 text-center mb-4">Compare plans</h2>
+	
+					<div class="table table-responsive">
+						<table class="table text-center">
+							<thead>
+								<tr style="    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;">
+									<th style="width: 34%"></th>
+									<th style="width: 22%">Free</th>
+									<th style="width: 22%">Pro</th>
+									<th style="width: 22%">Enterprise</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" class="text-start">Public</th>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="text-start">Private</th>
+									<td></td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+							</tbody>
+	
+							<tbody>
+								<tr>
+									<th scope="row" class="text-start">
+										Permissions
+									</th>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="text-start">Sharing</th>
+									<td></td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="text-start">
+										Unlimited members
+									</th>
+									<td></td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="text-start">
+										Extra security
+									</th>
+									<td></td>
+									<td></td>
+									<td>
+										<i class="bi bi-check"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+		</main>
 
-            </div>
-        </div>
-    </header>
+		<!-- Footer -->
+		<footer class="footer border-top">
+			<div class="container">
+				<div
+					class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+					<p class="col-md-4 mb-0 text-body-secondary">
+						© 2024 Company, Inc
+					</p>
 
-    <!-- Site Body/Content -->
-    <main>
+					<a
+						href="/"
+						class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+						<i class="bi bi-bootstrap-fill"></i>
+					</a>
 
-        <section class="first">
-            <div class="container">
-                <p style="padding: 430px 0;">content 1</p>
-            </div>
-        </section>
+					<ul class="nav col-md-4 justify-content-end">
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link px-2 text-body-secondary">
+								Home
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link px-2 text-body-secondary">
+								Features
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link px-2 text-body-secondary">
+								Pricing
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link px-2 text-body-secondary">
+								FAQs
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="nav-link px-2 text-body-secondary">
+								About
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
-    </main>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="requestModal"
+			tabindex="-1"
+			aria-labelledby="requestModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="requestModalLabel">
+							Заявка
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="name" class="form-label">Имя</label>
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									required />
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">
+									Email
+								</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									required />
+							</div>
+							<div class="mb-3">
+								<label for="message" class="form-label">
+									Сообщение
+								</label>
+								<textarea
+									class="form-control"
+									id="message"
+									rows="3"
+									required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__privacy-policy"><a href="#">Политика конфиденциальности</a></p>
-            <p class="footer__сopyright">© 2022 — 2024 "Владелец"</p>
-            <p class="footer__creator">Реализовал сайт <a href="https://kwork.ru/user/traniks">Traniks</a></p>
-        </div>
-    </footer>
-    
-    <script src="../../assets/js/main.js"></script>
-    <script src="js/index.js"></script>
-</body>
+		<footer class="footer"></footer>
+
+		<script src="../../assets/js/main.js"></script>
+		<script src="js/index.js"></script>
+	</body>
 </html>

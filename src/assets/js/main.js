@@ -1,5 +1,5 @@
-import { burger } from './blocks/burger'
+import 'bootstrap'
 
 document.addEventListener('DOMContentLoaded', () => {
-	burger()
+
 })

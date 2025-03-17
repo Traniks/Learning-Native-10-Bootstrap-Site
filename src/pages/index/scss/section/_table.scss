@@ -1,0 +1,15 @@
+.table {
+    tr, th, td {
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+    td {
+        position: relative;
+    }
+    .bi-check {
+        position: absolute;
+        font-size: 35px;
+        top: -15%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
